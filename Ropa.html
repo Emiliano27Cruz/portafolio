@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de ropa</title>
+</head>
+<body bgcolor="#FFEEE8">
+    <h1 align="center">Tienda de ropa</h1>
+    <form ction="" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Información del cliente</legend>
+            <table border="0" align="center" width="70%">
+                <thead>
+                    <tr>
+                        <td>
+                            <label for="Nombre">Nombre</label>
+                        </td> 
+                        <td>
+                            <label for="Apellido Paterno">Apellido Paterno</label>
+                        </td>
+                        <td>
+                            <label for="Apellido materno">Apellido Materno</label>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td>
+                            <input type="text" placeholder="Nombre" maxlength="12" name="Nombre" id="Nombre" />
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Apellido Paterno"
+                            maxlength="12" name="Apellido Paterno" id="Apellido Paterno" />
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Apellido materno"
+                            maxlength="12" name="Apellido materno" id="Apellido materno" />
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td>
+                            <label for="Usuario">Nombre de Usuario</label>
+                        </td>
+                        <td>
+                            <label for="pass">Contraseña:</label>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr> 
+                        <td>
+                            <input type="text" placeholder="Usuario"
+                            maxlength="12" name="Usuario" id="Usuario"/>
+                        </td>
+                        <td>
+                            <input type="password" name="pass"
+                            id="pass" placeholder="Password" required/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de facturación</legend>
+            <table border="0" align="center" width="70%">
+                <thead>
+                    <tr>
+                        <td>
+                            <label for="Calle">Calle</label><br>
+                        </td> 
+                        <td>
+                            <label for="Numero">Numero</label><br>
+                        </td>
+                        <td>
+                            <label for="Colonia">Colonia</label> <br>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Calle" maxlength="12" name="Calle" id="Calle" />
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Numero" maxlength="5" name="Numero" id="Numero" />
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Colonia" maxlength="15" name="Colonia" id="Colonia" />
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <label for="email">E-mail</label>
+                        </td> 
+                        <td>
+                            <label for="CP">Código Postal</label>
+                        </td>
+                        <td>
+                            <label for="RFC">RFC</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" placeholder="E-mail" maxlength="18" name="email" id="email" />
+                        </td>
+                        <td>
+                            <input type="text" placeholder="CP" maxlength="5" name="CP" id="CP" />
+                        </td>
+                        <td>
+                            <input type="text" placeholder="RFC" maxlength="20" name="RFC" id="RFC" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="fecha">Fecha de la venta:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="date" name="fecha" id="fecha"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Datos del artículo adquirido</legend>
+            <table border="0" align="center" width="70%">
+                <tr>
+                    <td><label for="Tipo">Tipo</label></td>
+                    <td><label for="Talla">Talla</label></td>
+                    <td><label for="Colores">Selecciona un color</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select size="5">
+                        <optgroup>
+                            <option>Saco</option>
+                            <option>Camisa</option>
+                            <option>Sudadera</option>
+                            <option>Pantalón</option>
+                            <option>Pants</option>
+                            <option>Zapatos</option>
+                            <option>Chamarra</option>
+                            <option>Chaleco</option>
+                            <option>Gorra</option>
+                        </optgroup>
+                    </select>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="chico" id="chico" value="chico">
+                        <label for="chico">Chico</label><br>
+                        <input type="checkbox" name="mediano" id="mediano" value="mediano">
+                        <label for="mediano">Mediano</label><br>
+                        <input type="checkbox" name="grande" id="grande" value="grande">
+                        <label for="grande">Grande</label><br>
+                    </td>
+                    <td>
+                        <input type="color" name="Colores" id="Colores"/>
+                    </td>
+                    <td>
+                        <input type="submit" name="enviar" id="enviar" value="Enviar Datos"/>
+                        <input type="reset" name="borrar" id="borrar" value="Borrar Datos"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <p align="right"><b>&copy;Distribuidora en línea 2023</b></p>
+</body>
+</html>
