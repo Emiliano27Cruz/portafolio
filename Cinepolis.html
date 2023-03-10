@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinépolis</title>
+    <link rel="icon" type="image/x-icon" href="cilogo.png">
+</head>
+<body bgcolor="#DCE6FF ">
+    <h1 align="center">Cinépolis</h1>
+    <h2 align="center">Compra De Boletos</h2>
+    <table border="0" align="center" width="65%">
+        <thead>
+            <tr>
+                <td>
+                    <img src="Creed.jpg" height="50%" width="50%">
+                </td> 
+                <td>
+                    <img src="Shazam.jpg" height="50%" width="50%">
+                </td>
+                <td>
+                    <img src="Ant.jpg" height="80%" width="80%">
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Creed</b></td>
+                <td><b>Shazam</b></td>
+                <td><b>Ant-Man and the Wasp: Quantumania</b></td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Selección de película y horario</legend>
+            <table border="0" align="center" width="65%">
+                <tr>
+                    <td><label for="Pelicula">Elige la película:</label></td>
+                    <td><label for="Boletos">¿Cuántos boletos va a comprar?</label></td>
+                    <td><label for="Sucursal">¿En qué sucursal nos va a visitar?</label></td>
+                    <td><label for="Hora">¿A qué hora?</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select size="3">
+                        <optgroup>
+                            <option>Creed</option>
+                            <option>Shazam</option>
+                            <option>Ant-Man</option>
+                        </optgroup>
+                        </select>
+                    </td>
+                    <td><input type="number"  name="Boletos" id="Boletos"/></td>
+                    <td>
+                        <input type="text" list="Sucursales">
+                            <datalist id="Sucursales">
+                            <option>Plaza San Luis</option>
+                            <option>Plaza El Dorado</option>
+                            <option>Plaza Citadina</option>
+                            <option>Plaza Sendero</option>
+                            </datalist>
+                    </td>
+                    <td>
+                        <select size="5">
+                            <optgroup>
+                                <option>12:00</option>
+                                <option>13:30</option>
+                                <option>14:00</option>
+                                <option>17:00</option>
+                                <option>18:40</option>
+                                <option>19:20</option>
+                                <option>20:00</option>
+                                <option>21:30</option>
+                                <option>22:00</option>
+                            </optgroup>
+                            </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Ingrese a su cuenta</legend>
+            <table border="0" align="center" width="65%">
+                <tr>
+                    <td>
+                        <label for="Usuario">Nombre de Usuario</label>
+                    </td>
+                    <td>
+                        <label for="Correo">Email</label>
+                    </td>
+                    <td>
+                        <label for="pass">Contraseña</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Usuario" maxlength="12" name="Usuario" id="Usuario"/>
+                    </td>
+                    <td>
+                        <input type="email" name="Correo" id="Correo" placeholder="ejemplo@gmail.com"/>
+                    </td>
+                    <td>
+                        <input type="password" name="pass" id="pass" placeholder="Password" required/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Forma de Pago y Datos Fiscales</legend>
+            <table border="0" align="center" width="65%">
+                <tr>
+                    <td>
+                        <label for="Nombre">Nombre</label>
+                    </td> 
+                    <td>
+                        <label for="Apellido Paterno">Apellido Paterno</label>
+                    </td>
+                    <td>
+                        <label for="Apellido materno">Apellido Materno</label>
+                    </td>
+                    <td>Indica tu forma de pago preferida:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Nombre" maxlength="12" name="Nombre" id="Nombre" />
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Apellido Paterno"
+                        maxlength="12" name="Apellido Paterno" id="Apellido Paterno" />
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Apellido materno"
+                        maxlength="12" name="Apellido materno" id="Apellido materno" />
+                    </td>
+                    <td>
+                        <input type="radio" name="tarjeta" id="tarjeta" value="tarjeta">
+                        <label for="tarjeta">Tarjeta de crédito</label><br>
+                        <input type="radio" name="debito" id="debito" value="debito">
+                        <label for="debito">Tarjeta de débito</label><br>
+                        <input type="radio" name="efectivo" id="efectivo" value="efectivo">
+                        <label for="efectivo">Efectivo</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Comentarios</legend>
+            <table border="0" align="center" width="65%">
+                <tr>
+                    <td><label for="Comenta">Si tienes algún comentario escríbelo aquí:</label></td>
+                </tr>
+                <tr>
+                    <td><textarea name="Comenta" placeholder="Tu comentario aquí"></textarea></td>
+                    <td>
+                        <input type="submit" name="enviar" id="enviar" value="Enviar Datos"/>
+                        <input type="reset" name="borrar" id="borrar" value="Borrar Datos"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
