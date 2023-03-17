@@ -1,0 +1,32 @@
+#uno{
+    background-color: rgb(200, 236, 200) 
+}
+#sub1{
+    color: blueviolet;
+    font-size: 20px;
+    text-decoration: underline solid; font-style: italic;
+}
+
+#texto1{
+    color: rgb(63, 161, 129); font-weight: bold;
+    text-align: justify; font-family: Arial, Helvetica, sans-serif; font-style: italic;
+
+}
+
+#texto2{
+    color: black;
+    text-align: justify; font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color: blue; font-style: italic;
+    font-size: 22px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#dos{
+    background-color: rgb(200, 236, 200) 
+}
+
+ol{
+    list-style-type: decimal;
+}
