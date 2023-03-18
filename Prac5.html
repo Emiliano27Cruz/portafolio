@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 5</title>
+    <link rel="stylesheet" href="estilo.css"/>
+</head>
+<body>
+    <h1>Servicios de Internet y Telefonía</h1>
+    <h3>Contrato de servicios</h3>
+    <fieldset>
+        <legend>Datos del cliente</legend>
+            <table style="width: 75%;" align="center" >
+                <tr>
+                    <th>
+                    <label for="nom">Nombre:</label>
+                    <input type="text" placeholder="Nombre" maxlength="12" name="nom" id="nom"/><br>
+                    </th>
+                    <th>
+                    <label for="pat">Apellido Paterno:</label>
+                    <input type="text" placeholder="Apellido Paterno" maxlength="12" name="pat" id="pat"/><br>
+                    </th>
+                    <th>
+                    <label for="mat">Apellido Materno:</label>
+                    <input type="text" placeholder="Apellido Materno" maxlength="12" name="mat" id="mat"/><br>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cit">Ciudad</label><br>
+                        <select size="6">
+                            <option>San Luis Potosi</option><option>Cd. Valles</option>
+                            <option>Queretaro</option><option>Ciudad de Mexico</option>
+                            <option>La Paz</option><option>Zacatecas</option>
+                            <option>Guadalajara</option><option>Ciudad Juarez</option>
+                            <option>Morelia</option><option>Tijuana</option>
+                            <option>Monterrey</option><option>Ciudad Guzmán</option>
+                            <option>Mexicali</option><option>Guanajuato</option>
+                            <option>Merida</option><option>Culiacan</option>
+                            <option>Campeche</option><option>Villa Hermosa</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+   </fieldset>
+   <fieldset>
+        <legend>Servicios a contratar</legend>
+        <table style="width: 75%;" align="center">
+            <tr>
+                <th><label>Selecciona el tipo de servicio a contratar</label></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><label for="tel">Línea Telefónica</label><input type="checkbox" id="tel" checked="checked"></td>
+                <td><label for="int">Servicio de Internet</label><input type="checkbox" style="" id="int" checked="checked"></td>
+            </tr>
+        </table>
+   </fieldset>
+   <fieldset>
+        <legend>Forma de pago</legend>
+        <table style="width: 75%;" align="center">
+                <tr>
+                    <td><b>Elige la forma de pago</b></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                <td><form method="get">
+                TDC:<input name="pag" type="radio" value="TDC"><br>
+                Tarjeta Débito:<input name="pag" type="radio" value="TaDe" checked="checked"><br>
+                Pago en Efectivo:<input name="pag" type="radio" value="efe"><br>
+                Pago mediante Cheque:<input name="pag" type="radio" value="che"><br>
+                Transferencia bancaria:<input name="pag" type="radio" value="trans"><br>
+                Depósito bancario:<input name="pag" type="radio" value="dep"><br>
+                Pago en Oxxo:<input name="pag" type="radio" value="oxxo"><br>
+                </form></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <td>
+                    <input type="submit" name="enviar" id="enviar" value="Enviar Datos"/><input type="reset" name="borrar" id="borrar" value="Borrar Datos"/>
+                </td>
+                <td></td>
+                <td></td>
+                </tr>
+        </table>
+    </fieldset>
+   <br>
+   <h3>Práctica 5</h3>
+   <br>
+   <h4>HTML5-CSS</h4>
+   <br>
+   <h5>Primavera 2023</h5>
+</body>
+</html>
