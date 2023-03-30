@@ -1,0 +1,40 @@
+#uno{
+    display: block;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #000000;
+    text-align: center;
+    margin: 15px auto;
+    background: #77a6b9;
+    font-family: 'Alkatra', cursive; font-size: 30px;
+}
+
+#uno:hover{
+    display: block;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #fab5b5;
+    text-align: center;
+    margin: 15px auto;
+    background: #67e08b;
+    -moz-border-radius: 30px 30px 30px 40px;
+    -webkit-border-radius: 30px 30px 30px 40px;
+    border-radius: 30px 30px 30px 40px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+#uno:active{
+    display: block;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #4864a0;
+    text-align: center;
+    margin: 15px auto;
+    background: #fcc8dd;
+    -moz-box-shadow: rgb(202, 202, 202) 10px 15px 5px;
+    -webkit-box-shadow: rgb(202, 202, 202) 10px 15px 5px;
+    box-shadow: rgb(202, 202, 202) 10px 15px 5px;
+    font-family: 'Lobster', cursive;
+}
+
