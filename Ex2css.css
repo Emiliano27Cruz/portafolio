@@ -1,0 +1,77 @@
+#titulo{
+    position: absolute;
+    width: 150px; height: 75px;
+    padding: 20px;
+    left: 80%;
+    border: 1px solid #fab5b5;
+    text-align: center;
+    margin: 15px auto;
+    background: #c1f3d0;
+    -moz-border-radius: 30px 30px 30px 40px;
+    -webkit-border-radius: 30px 30px 30px 40px;
+    border-radius: 30px 30px 30px 40px;
+    font-family: 'Lora', serif;
+    font-size: 10px;
+}
+
+.barra{
+    background-color: rgb(62, 182, 62);
+    height: 80px;
+    width: 250px;
+    display: flex;
+    padding: 0 5% 0, 5%;
+    position: relative;   
+  }
+   .barra ul{
+    list-style: none;
+    display: flex;
+  }
+  .barra ul li{
+    width: 250px; 
+    padding: 20px 30px;
+    position: relative;
+  }
+  
+  .barra ul li a{
+    font-size: 20px;
+    color: rgb(143, 212, 169);
+    text-decoration: none;
+    text-align: left;
+    transition: all 0.3s;
+    font-family: 'Alkatra';
+  }
+  
+  .barra ul li a:hover{
+    color: rgb(53, 53, 53);
+  }
+  
+  .fas{
+    float: left;
+    padding-top: 3px;
+    padding-left: 15px;
+  }
+
+  .desplegable{
+    display: none;
+  }
+  .barra ul li:hover .desplegable{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 80px;
+    top: 100%;
+    background-color: rgb(10, 175, 10);
+  }
+  
+  .barra ul li:hover .desplegable ul{
+    display: block;
+    margin: 10px;
+    z-index: -1;
+    background: none;
+    width: 250px;
+  }
+
+  .desplegable li:hover{
+    background-color: greenyellow;
+    width: 200px;
+  }
