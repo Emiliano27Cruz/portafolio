@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 4</title>
+    <script src="44Java.js"></script>
+</head>
+<body style="text-align: center;">
+    <h1>Calcula tu RFC</h1>
+    <form>
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" required><br>
+      <label for="apellido-paterno">Apellido Paterno:</label><br>
+      <input type="text" id="apellido-paterno" required><br>
+      <label for="apellido-materno">Apellido Materno:</label><br>
+      <input type="text" id="apellido-materno" required><br>
+      <label for="anio">Año de nacimiento:</label><br>
+      <input type="number" id="anio" required><br>
+      <label for="mes">Mes de nacimiento:</label><br>
+      <input type="number" id="mes" min="1" max="12" required><br>
+      <label for="dia">Día de nacimiento:</label><br>
+      <input type="number" id="dia" min="1" max="31" required><br>
+    </form>
+    <p>Resultado: <span id="resultado"></span></p>
+    <br>
+    <button type="button" onclick="calcularRFC()" style="background-color: rgb(38, 100, 214); color: white; width: 180px; height: 30px;">Calcular RFC</button>
+</body>
+</html>
