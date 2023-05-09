@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo</title>
+    </head>
+    <body>
+        <h2>Función Back (Hacia Atrás)</h2>
+        <button onclick="myFunction1()">Back</button>
+        <script>
+            function myFunction1() {
+                window.history.back();
+            }
+        </script>
+        <!--The back() method loads the previous URL in the windows.history list.
+It is the same as clicking the "back arrow" in your browser.-->
+        <BR>
+        <BR></BR>
+</BR>
+<!--The go() method loads a specific URL from the history list:-->
+<button onclick="myFunction2()">Regresar 2 con la funcion go</button>
+<script>
+    function myFunction2() {
+        window.history.go(-2);
+    }
+</script>
+<br>
+<br>
+<br>
+<!--The forward() va a la siguiente del historial:-->
+<h2>Función Forward (Hacia Adelante)</h2>
+<button onclick="myFunction3()">Forward</button>
+<script>
+    function myFunction3() {
+        window.history.forward();
+    }
+</script>
+<br>
+<br>
+<br>
+<h2>La history.length Property</h2>
+<p>Numero de URLs en el historial</p>
+<p id="demo"></p>
+<script>
+    let length = window.history.length;
+    document.getElementById("demo").innerHTML = length;
+</script>
+<div style="text-align:right;position:fixed;z-index:9999999;bottom:0;width:auto;right:1%;cursor:pointer;line-height:0;display:block!important">
+    <a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img">
+        <img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com">
+    </a>
+</div>
+<script>
+    function getCookie(t) {
+        for (var e = t + "=", n = decodeURIComponent(document.cookie).split(";"), o = 0; o < n.length; o++) {
+            for (var i = n[o]; " " == i.charAt(0); )
+                i = i.substring(1);
+            if (0 == i.indexOf(e))
+                return i.substring(e.length, i.length)
+        }
+        return ""
+    }
+</script>
+</body>
+</html>
