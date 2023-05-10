@@ -1,0 +1,23 @@
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold;
+    font-size: 50px; color: black;
+    text-align: center;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+    font-size: 30px; color: black;
+    text-align: center;
+}
+
+#parra{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; color: black;
+    text-align: center;
+}
+
+form{
+    ont-family: Arial, Helvetica, sans-serif;
+    font-size: 15px; color: black;
+    text-align: center;
+}

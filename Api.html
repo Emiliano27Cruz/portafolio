@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practica 6</title>
+    <link rel="stylesheet" href="apicss.css">
+</head>
+<body bgcolor="#DCE6FF">
+
+<h1>Validation API</h1>
+<h2>Explicación</h2>
+<p id="parra">
+    Este código crea un formulario y a través de las propiedades "customError", "patternMismatch", "rangeOverflow", "rangeUnderflow", etc.
+    Revisa si el número ingresado en "Año de nacimiento" cumple con las propiedades requeridas
+</p>
+
+<h2>Importancia</h2>
+<p id="parra">
+    Esta API es importante porque verifica que los datos ingresados por el usuario sean precisos, completos y seguros, evitando errores y posibles mal entendidos.
+</p>
+
+<h2>Ejemplo: Validación de un Formulario</h2>
+
+<form>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre"><br>
+
+    <label for="apellido-paterno">Apellido Paterno:</label><br>
+    <input type="text" id="apellido-paterno"><br>
+
+    <label for="apellido-materno">Apellido Materno:</label><br>
+    <input type="text" id="apellido-materno"><br>
+
+    <label for="id1">Año de nacimiento:</label><br>
+    <input id="id1" type="number" min="1900" max="2023" required><br><br>
+    <button onclick="myFunction()" style="background-color: rgb(34, 129, 71); color: white; width: 160px; height: 30px;">OK</button>
+</form>
+
+<p id="demo"></p>
+
+<h2>Utilidad en esta página</h2>
+<p id="parra">
+    Esta API sirve para validar el número del año de nacimiento, de tal forma que solo puedan ser fechas de nacimiento reales.
+</p>
+
+<script>
+function myFunction() {
+  const inpObj = document.getElementById("id1");
+  if (!inpObj.checkValidity()) {
+    document.getElementById("demo").innerHTML = inpObj.validationMessage;
+  } else {
+    document.getElementById("demo").innerHTML = "Input OK";
+  } 
+} 
+</script>
+
+</body>
+</html>
