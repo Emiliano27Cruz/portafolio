@@ -1,0 +1,30 @@
+
+body{
+    background-image: url(fa.avif); background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#logo{
+    float: right; transform: translate(0, -70px);
+    width: 175px; height: 175px;
+}
+
+h1{
+    font-family: Georgia, Times; font-size: 45px;
+    text-align: center; color: rgb(180, 199, 214);
+}
+
+h2{
+    font-family: Georgia, Times; font-size: 30px;
+    text-align: center; color: rgb(229, 233, 236);
+}
+
+form, #total, #comentario{
+    font-family: Verdana, Tahoma; font-size: 18px;
+    text-align: center; color: rgb(229, 233, 236);
+}
+
+#boton{
+    width: 200px; height: 50px; background-color: blue;
+    color: white; font-size: 20px;
+}

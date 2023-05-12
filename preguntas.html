@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cuestionario</title>
+    <link rel="stylesheet" href="cssform.css">
+</head>
+<script>
+    function califica(){        <!--función de JavaScript llamada "califica", que se ejecuta cuando se hace clic en el botón "Calificar" en la página web.-->
+        var total=0;             <!-- Esta línea inicializa una variable llamada "total" y le asigna el valor cero. -->
+        for(var x=1; x<6; x++){  <!-- bucle for que se ejecuta 5 veces (x<6), que es la cantidad de preguntas que hay en el cuestionario.-->
+            var res=0;          <!--Esta línea inicializa una variable llamada "res" y le asigna el valor cero.-->
+            var nom="r"+x;      <!--inicializa una variable llamada "nom" y le asigna un valor de cadena que se utiliza para buscar el elemento HTML con el nombre "r1", "r2", "r3", "r4", o "r5" dependiendo del valor de "x".-->
+            var resul=document.getElementsByName(nom);      <!--busca el elemento HTML con el nombre "nom" y lo almacena en la variable "resul".-->
+            for(var i=0; i<resul.length; i++){              <!--bucle for que se ejecuta para cada botón de opción en el grupo de opciones de la pregunta específica.-->
+                if(resul[i].checked==true)                  <!--Esta línea verifica si el botón de opción actual está seleccionado y, si es así, asigna su valor numérico a la variable "res".-->
+                    res=parseInt(resul[i].value);
+            }
+            total=total+res; <!--Acumulador para sumar los puntos-->
+            document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";  <!--actualiza el texto en el elemento HTML con el ID "total" para mostrar la cantidad de puntos obtenidos en el cuestionario.-->
+        }
+        if(total==25)  <!--Se compara la cantidad de puntos y pone un comentario en funcion de ello-->
+        	document.getElementById("comentario").innerHTML="EXCELENTE! Eres todo un experto de la NFL";  
+        else
+        	if(total==20)
+        	document.getElementById("comentario").innerHTML="Muy bien! Eres un gran fan!";
+        else
+        	if(total==15)
+        	document.getElementById("comentario").innerHTML="Bien! Eres un fan regular";
+        else
+        	if(total<=10)
+        	document.getElementById("comentario").innerHTML="Te hace falta ver más NFL!";
+    }
+</script>
+
+<body>
+    <h1>¡Demuestra tus conocimientos sobre NFL!</h1>  
+    <img id="logo" src="NFL.png">       <!--Imagen logo de la NFL-->
+    <h2>Contesta el siguiente formulario seleccionando solo una respuesta</h2>
+    <form>    <!--Se inicializa el formulario-->
+        <div>
+            <ul> 
+                <li>¿Cuántos equipos hay en la liga?</li>  <!--Preguntas-->
+                <input type="radio" name="r1" id="r1" value="5"/>32<br/>
+                <input type="radio" name="r1" id="r1" value="0"/>30<br/>
+                <input type="radio" name="r1" id="r1" value="0"/>40<br/>
+                <input type="radio" name="r1" id="r1" value="0"/>28<br/>
+                
+                <li>¿Cuántas conferencias hay en la liga?</li>
+                <input type="radio" name="r2" id="r2" value="0"/>3<br/>
+                <input type="radio" name="r2" id="r2" value="0"/>1<br/>
+                <input type="radio" name="r2" id="r2" value="5"/>2<br/>
+                <input type="radio" name="r2" id="r2" value="0"/>4<br/>
+
+                <li>¿Cuáles son el equipo más ganadores del "SuperBowl"?</li>
+                <input type="radio" name="r3" id="r3" value="0"/>Rams y Steelers<br/>
+                <input type="radio" name="r3" id="r3" value="0"/>Chiefs y Ravens<br/>
+                <input type="radio" name="r3" id="r3" value="0"/>Patriots y Broncos<br/>
+                <input type="radio" name="r3" id="r3" value="5"/>Patriots y Steelers<br/>
+
+                <li>¿Cuántas veces han ganado el "SuperBowl" dichos equipos?</li>
+                <input type="radio" name="r4" id="r4" value="5"/>6<br/>
+                <input type="radio" name="r4" id="r4" value="0"/>10<br/>
+                <input type="radio" name="r4" id="r4" value="0"/>8<br/>
+                <input type="radio" name="r4" id="r4" value="0"/>5<br/>
+
+                <li>¿Qué significan las siglas NFL?</li>
+                <input type="radio" name="r5" id="r5" value="0"/>National Flag League<br/>
+                <input type="radio" name="r5" id="r5" value="5"/>National Football League<br/>
+                <input type="radio" name="r5" id="r5" value="0"/>National Federation League<br/>
+                <input type="radio" name="r5" id="r5" value="0"/>National Football Law<br/>
+            </ul>
+        </div>
+        <input id="boton" type="button" value="calificar" onclick="califica()"> 
+    </form>
+    <p id="total">   </p>
+    <p id="comentario">   </p>
+</body>
+
+
+</html>
